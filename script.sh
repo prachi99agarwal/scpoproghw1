@@ -19,7 +19,7 @@ cd ~
 
 # 2. from your home, creating a directory structure: new folder `scpoprogramming`, and inside that folder create folder `hw1`
 # (enter your command below)
-mkdir scpoprogramming | cd scpoprogramming > hw1
+mkdir -p scpoprogramming/hw1 
 
 # 3. go into that new directory, i.e. into ~/scpoprogramming/hw1
 # (enter your command below)
@@ -65,7 +65,7 @@ head -n 4 movies.dat.txt
 # fill in for _filename_ the correct file you want to operate on. 
 # then remove the # character from the start of the line and look at the result
 
- awk -F '::' '{print $3}' movies.dat.txt
+awk -F '::' '{print $3}' movies.dat.txt
 
 # 2. observe that the `{print $3}` part prints the third field. 
 # that looks like: genre1|genre2
@@ -105,8 +105,8 @@ then
     echo "correct! :-)"
     exit 0
 else
-    echo "wrong result :-("
-    exit 1
+   echo "wrong result :-("
+   exit 1
 fi
 
 
